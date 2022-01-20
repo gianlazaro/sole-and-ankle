@@ -44,6 +44,10 @@ const ShoeCard = ({
         </Row>
         <Row>
           <ColorInfo>{pluralize("Color", numOfColors)}</ColorInfo>
+          {variant === 'on-sale' ?
+          <SalePrice>{formatPrice(salePrice)}</SalePrice>:
+            undefined
+        }
         </Row>
       </Wrapper>
     </Link>
@@ -53,13 +57,10 @@ const ShoeCard = ({
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
-  display: flex;
-  flex: 1 1 350px;
 `;
 
 const Wrapper = styled.article`
-  display: flex;
-  flex-direction: column;
+
 `;
 
 const ImageWrapper = styled.div`
