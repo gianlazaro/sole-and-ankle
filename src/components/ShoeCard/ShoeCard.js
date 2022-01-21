@@ -31,14 +31,6 @@ const ShoeCard = ({
       ? 'new-release'
       : 'default'
 
-  let Flag;
-  if(variant==='on-sale'){
-    Flag = SaleFlag;
-  } else if(variant==='new-release') {
-    Flag = NewFlag;
-  } else {
-    Flag = null;
-  }
   return (
     <Link href={`/shoe/${slug}`}>
       <Wrapper>
@@ -74,7 +66,6 @@ const Link = styled.a`
 `;
 
 const Wrapper = styled.article`
-
 `;
 
 const ImageWrapper = styled.div`
