@@ -120,7 +120,7 @@ const Flag = styled.div`
   font-size: ${14/18}rem;
   font-weight: ${WEIGHTS.bold};
   text-align: center;
-  border-radius: 2px;
+  border-radius: 3px;
   color: white;
 `;
 
